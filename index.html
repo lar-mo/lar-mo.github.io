@@ -6,6 +6,7 @@
     <title>Larry Moiola ► Social Media</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://lar-mo.com/images/lar-mo_favicon.png" />
     <style type="text/css">
       /* html:not([data-scroll='10']) header {
         background-color: rgba(128, 128, 128, 0.99);
@@ -135,7 +136,6 @@
   <body>
     <header><h1>Larry Moiola ► Social Media</h1></header>
     <div class="wrapper">
-
       <div class="lab_solution">
         <div class="title_description">
           <h2>Instagram</h2>
@@ -143,7 +143,6 @@
         </div>
         <div><a href="https://www.instagram.com/pha3drus/" target="_blank"><img src="https://www.lar-mo.com/images/ig_hero.png"/></a></div>
       </div>
-
       <div class="lab_solution">
         <div class="title_description">
           <h2>YouTube</h2>
@@ -151,7 +150,6 @@
         </div>
         <div><a href="https://www.youtube.com/channel/UCC1qxcrJWRQRfjDMY_1mr8Q" target="_blank"><img src="https://www.lar-mo.com/images/youtube_hero.png"/></a></div>
       </div>
-
       <div class="lab_solution">
         <div class="title_description">
           <h2>Pinterest</h2>
@@ -159,7 +157,6 @@
         </div>
         <div><a href="https://www.pinterest.com/larry_moiola/" target="_blank"><img src="https://www.lar-mo.com/images/pinterest_hero.png"/></a></div>
       </div>
-
       <div class="lab_solution">
         <div class="title_description">
           <h2>GitHub</h2>
@@ -167,46 +164,7 @@
         </div>
         <div><a href="https://github.com/lar-mo" target="_blank"><img src="https://www.lar-mo.com/images/github_hero.png"/></a></div>
       </div>
-
     </div>
-    <script type="text/javascript">
-          // The debounce function receives our function as a parameter
-      const debounce = (fn) => {
-
-      // This holds the requestAnimationFrame reference, so we can cancel it if we wish
-      let frame;
-
-      // The debounce function returns a new function that can receive a variable number of arguments
-      return (...params) => {
-
-        // If the frame variable has been defined, clear it now, and queue for next frame
-        if (frame) {
-          cancelAnimationFrame(frame);
-        }
-
-        // Queue our function call for the next frame
-        frame = requestAnimationFrame(() => {
-
-          // Call our function and pass any params we received
-          fn(...params);
-        });
-
-      }
-      };
-
-
-      // Reads out the scroll position and stores it in the data attribute
-      // so we can use it in our stylesheets
-      const storeScroll = () => {
-      document.documentElement.dataset.scroll = window.scrollY;
-      }
-
-      // Listen for new scroll events, here we debounce our `storeScroll` function
-      document.addEventListener('scroll', debounce(storeScroll), { passive: true });
-
-      // Update scroll position for first time
-      storeScroll();
-    </script>
     <script type="text/javascript">
         // Credit:
         // https://codepen.io/nickcil/pen/sfutl
