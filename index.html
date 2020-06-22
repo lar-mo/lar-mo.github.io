@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Larry Moiola ► Social Media</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="https://lar-mo.com/images/lar-mo_favicon.png" />
     <style type="text/css">
@@ -54,7 +56,8 @@
         padding: 10px;
       }
       .title_description {
-        background-color: rgba(128, 128, 128, 0.8);
+        background-color: rgba(128, 128, 128);
+        opacity: 0.8;
         border-radius: 20px;
         color: #F9F9F9;
         display: flex;
@@ -167,8 +170,20 @@
         // https://codepen.io/nickcil/pen/sfutl
         // https://stackoverflow.com/questions/13725263/changing-background-opacity-of-div-using-rgba
         $(window).scroll(function(){
-        $("header").css("background-color", 'rgba(128, 128, 128,' + (0.7 + $(window).scrollTop() / 300) + ')');
-      });
+          $("header").css("background-color", 'rgba(128, 128, 128,' + (0.7 + $(window).scrollTop() / 300) + ')');
+        });
+        // Credit:
+        // https://www.w3schools.com/jquery/jquery_animate.asp
+        $("div.title_description").hover(
+          function() {
+            // $(this).css("background-color","rgba(128, 128, 128, 0.99)");
+            $(this).animate({opacity: '1.0'}, "slow");
+          },
+          function() {
+            // $(this).css("background-color","rgba(128, 128, 128, 0.7)");
+            $(this).animate({opacity: '0.8'}, "slow");
+          }
+        );
     </script>
   </body>
 </html>
