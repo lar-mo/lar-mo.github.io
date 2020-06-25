@@ -25,7 +25,7 @@
         background-size: cover;
       }
       header {
-        background-color: rgb(128, 128, 128, 0.7);
+        background-color: rgba(128, 128, 128, 0.7);
         color: #C0C0C0;
         top: 0;
         position: sticky;
@@ -57,7 +57,7 @@
         padding: 10px;
       }
       .title_description {
-        background-color: rgba(128, 128, 128);
+        background-color: rgb(128, 128, 128);
         opacity: 0.8;
         border-radius: 20px;
         color: #F9F9F9;
@@ -90,6 +90,12 @@
         color: #FFF;
         text-decoration: none;
       }
+      .image_container {
+        position: relative;
+      }
+      .text_block {
+        display: none;
+      }
       @media all and (max-width: 800px) {
         .lab_solution {
           justify-content: space-around;
@@ -109,6 +115,9 @@
         h1 {
           font-size: 1.8em;
         }
+        .text_block {
+          display: none;
+        }
       }
       @media all and (max-width: 575px) {
         .title_description {
@@ -119,6 +128,9 @@
         }
         h2 {
           font-size: 0.9em;
+        }
+        .text_block {
+          display: none;
         }
       }
       @media all and (max-width: 500px) {
@@ -131,6 +143,20 @@
         .title_description {
           display: none;
         }
+        .text_block {
+          position: absolute;
+          display: inline-block;
+          top: 60px;
+          left: 5px;
+          /* width: 180px; */
+          width: 280px;
+          background-color: rgba(0, 0, 0, 0.6);
+          color: white;
+          /* padding: 15px auto; */
+        }
+        .text_block > h1 {
+          text-align: center;
+        }
       }
     </style>
   </head>
@@ -142,28 +168,48 @@
           <h2>Instagram</h2>
           <article><a href="https://www.instagram.com/pha3drus/" target="_blank">My photos and digital art.</a></article>
         </div>
-        <div><a href="https://www.instagram.com/pha3drus/" target="_blank"><img src="https://www.lar-mo.com/images/ig_hero.png"/></a></div>
+        <div class="image_container">
+          <a href="https://www.instagram.com/pha3drus/" target="_blank"><img src="https://www.lar-mo.com/images/ig_hero.png"/></a>
+          <div class="text_block">
+            <h1>Instagram</h1>
+          </div>
+        </div>
       </div>
       <div class="lab_solution">
         <div class="title_description">
           <h2>YouTube</h2>
           <article><a href="https://www.youtube.com/channel/UCC1qxcrJWRQRfjDMY_1mr8Q" target="_blank">My music videos and short films.</a></article>
         </div>
-        <div><a href="https://www.youtube.com/channel/UCC1qxcrJWRQRfjDMY_1mr8Q" target="_blank"><img src="https://www.lar-mo.com/images/youtube_hero.png"/></a></div>
+        <div class="image_container">
+          <a href="https://www.youtube.com/channel/UCC1qxcrJWRQRfjDMY_1mr8Q" target="_blank"><img src="https://www.lar-mo.com/images/youtube_hero.png"/></a>
+          <div class="text_block">
+            <h1>YouTube</h1>
+          </div>
+        </div>
       </div>
       <div class="lab_solution">
         <div class="title_description">
           <h2>Pinterest</h2>
           <article><a href="https://www.pinterest.com/larry_moiola/" target="_blank">Other people's media.</a></article>
         </div>
-        <div><a href="https://www.pinterest.com/larry_moiola/" target="_blank"><img src="https://www.lar-mo.com/images/pinterest_hero.png"/></a></div>
+        <div class="image_container">
+          <a href="https://www.pinterest.com/larry_moiola/" target="_blank"><img src="https://www.lar-mo.com/images/pinterest_hero.png"/></a>
+          <div class="text_block">
+            <h1>Pinterest</h1>
+          </div>
+        </div>
       </div>
       <div class="lab_solution">
         <div class="title_description">
           <h2>GitHub</h2>
           <article><a href="https://github.com/lar-mo" target="_blank">My software projects.</a></article>
         </div>
-        <div><a href="https://github.com/lar-mo" target="_blank"><img src="https://www.lar-mo.com/images/github_hero.png"/></a></div>
+        <div class="image_container">
+          <a href="https://github.com/lar-mo" target="_blank"><img src="https://www.lar-mo.com/images/github_hero.png"/></a>
+          <div class="text_block">
+            <h1>GitHub</h1>
+          </div>
+        </div>
       </div>
     </div>
     <script type="text/javascript">
@@ -175,7 +221,7 @@
         });
         // Credit:
         // https://www.w3schools.com/jquery/jquery_animate.asp
-        // https://stackoverflow.com/questions/31353418/how-to-animate-background-color-in-jquery
+        // https://stackoverflow.com/questions/31353418/how-to-animate-background-color-in-jqueryd
         $("div.title_description").hover(
           function() {
             // $(this).css("background-color","rgba(128, 128, 128, 0.99)");
