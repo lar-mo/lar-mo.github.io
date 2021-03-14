@@ -11,6 +11,7 @@ body {
   background-image: url(https://www.lar-mo.com/images/index_bg_img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: top, center;
 }
 h1 {
   color: #F9F9F9;
@@ -98,6 +99,7 @@ article, .content p {
 @media all and (max-width: 1000px) {
   body {
     background-attachment: inherit;
+    background-size: inherit;
   }
   #hero1, #hero2 {
     width: 350px;
