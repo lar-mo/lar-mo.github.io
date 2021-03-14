@@ -96,6 +96,9 @@ article, .content p {
 }
 
 @media all and (max-width: 1000px) {
+  body {
+    background-attachment: inherit;
+  }
   #hero1, #hero2 {
     width: 350px;
     height: 221px;
