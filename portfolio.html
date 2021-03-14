@@ -7,85 +7,88 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="https://lar-mo.com/images/lar-mo_favicon.png" />
     <link rel="stylesheet" href="styles.css">
-    <style type="text/css"></style>
   </head>
   <body>
-    <header><h1><a href="index.html">Larry Moiola ►</a> Portfolio</h1></header>
+    <header><h1><a href="index.html" id="header_link">Larry Moiola ►</a> Portfolio</h1></header>
     <div class="wrapper">
-      <a href="https://www.community-lending-library.org/" target="_blank">
-        <div class="lab_solution">
-          <div class="title_description">
-            <h2>Community Lending Library</h2>
-            <article>Search, request, and lend items.</article>
-          </div>
-          <div class="image_container">
-            <img src="https://www.lar-mo.com/images/cll_hero.png"/>
-            <div class="mobile_banner">
-              <h1>Community Lending Library</h1>
-            </div>
-          </div>
-        </div>
-      </a>
-      <a href="https://www.registration-rbac.com/" target="_blank">
-        <div class="lab_solution">
-          <div class="title_description">
-            <h2>Registration + RBAC</h2>
-            <article>2-step registration & 3-tier membership.</article>
-          </div>
-          <div class="image_container">
-            <img src="https://www.lar-mo.com/images/reg-rbac_hero.png"/>
-            <div class="mobile_banner">
-              <h1>Registration + RBAC</h1>
-            </div>
-          </div>
-        </div>
-      </a>
-      <a href="https://lar-mo.com/portfolio/javascript_examples/todo_list.html" target="_blank">
-        <div class="lab_solution">
-          <div class="title_description">
-            <h2>Todo List</h2>
-            <article>JavaScript practice.</article>
-          </div>
-          <div class="image_container">
-            <img src="https://www.lar-mo.com/images/tdl_hero.png"/>
-            <div class="mobile_banner">
-              <h1>Todo List</h1>
-            </div>
-          </div>
-        </div>
-      </a>
-      <a href="https://lar-mo.com/portfolio/javascript_examples/countdown_timer.html" target="_blank">
-        <div class="lab_solution">
-          <div class="title_description">
-            <h2>Countdown Timer</h2>
-            <article>VueJS practice.</article>
-          </div>
-          <div class="image_container">
-            <img src="https://www.lar-mo.com/images/ct_hero.png"/>
-            <div class="mobile_banner">
-              <h1>Countdown Timer</h1>
-            </div>
-          </div>
-        </div>
-      </a>
-      <a href="https://lar-mo.github.io/AdventOfCode/" target="_blank">
-        <div class="lab_solution">
-          <div class="title_description">
-            <h2>Advent of Code labs</h2>
-            <article>Python & JavaScript practice.</article>
-          </div>
-          <div class="image_container">
-            <img src="https://www.lar-mo.com/images/aoc_hero.png"/>
-            <div class="mobile_banner">
-              <h1>Advent of Code labs</h1>
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
+
+      <div class="hero_image">
+          <img src="https://www.lar-mo.com/images/pmd_hero.png"/>
+      </div>
+      <div class="content">
+          <div class="close_button">☒</div>
+          <p>
+            <span class="title">Patty M Designs: Florist website.</span>
+            <p>Javascript, JQuery, Axios, Flickr API, Responsive, Mobile-friendly, Formspree, Google Analytics</p>
+            <p><a href="https://www.pattymdesigns.com" class="siteLink" target="_blank">visit site</a></p>
+          </p>
+      </div>
+
+      <div class="hero_image">
+          <img src="https://www.lar-mo.com/images/cll_hero.png"/>
+      </div>
+      <div class="content">
+        <div class="close_button">☒</div>
+        <p>
+          <span class="title">Community Lending Library: Search, request, and lend items.</span>
+          <p>Django, Python, Javascript, HTML, CSS</p>
+          <p><a href="https://www.community-lending-library.org/" class="siteLink" target="_blank">visit site</a></p>
+        </p>
+      </div>
+
+      <div class="hero_image">
+          <img src="https://www.lar-mo.com/images/reg-rbac_hero.png"/>
+      </div>
+      <div class="content">
+        <div class="close_button">☒</div>
+        <p>
+          <span class="title">Registration + RBAC: 2-step registration & 3-tier membership.</span>
+          <p>Django, Python, Javascript, HTML, CSS</p>
+          <p><a href="https://www.registration-rbac.com/" class="siteLink" target="_blank">visit site</a></p>
+        </p>
+      </div>
+
+      <div class="hero_image">
+          <img src="https://www.lar-mo.com/images/tdl_hero.png"/>
+      </div>
+      <div class="content">
+        <div class="close_button">☒</div>
+        <p>
+          <span class="title">Todo List: Simple practice app</span>
+          <p>Javascript, persistent data storage.</p>
+          <p><a href="https://lar-mo.com/portfolio/javascript_examples/todo_list.html" class="siteLink" target="_blank">visit site</a></p>
+        </p>
+      </div>
+
+      <div class="hero_image">
+          <img src="https://www.lar-mo.com/images/ct_hero.png"/>
+      </div>
+      <div class="content">
+        <div class="close_button">☒</div>
+        <p>
+          <span class="title">Countdown Timer: Simple practice app
+          <p>Javascript, VueJS</p>
+          <p><a href="https://lar-mo.com/portfolio/javascript_examples/countdown_timer.html" class="siteLink" target="_blank">visit site</a></p>
+        </p>
+      </div>
+
+      <div class="hero_image">
+          <img src="https://www.lar-mo.com/images/aoc_hero.png"/>
+      </div>
+      <div class="content">
+        <div class="close_button">☒</div>
+        <p>
+          <span class="title">Advent of Code labs: Programming Puzzles</span>
+          <p>Python, JavaScript</p>
+          <p><a href="https://lar-mo.github.io/AdventOfCode/" class="siteLink" target="_blank">visit site</a></p>
+        </p>
+      </div>
+
+    </div> <!-- end of wrapper -->
     <script type="text/javascript">
         // Credit:
         // https://codepen.io/nickcil/pen/sfutl
@@ -95,17 +98,23 @@
         });
     </script>
     <script type="text/javascript">
-        // Credit:
-        // https://www.w3schools.com/jquery/jquery_animate.asp
-        // https://stackoverflow.com/questions/31353418/how-to-animate-background-color-in-jqueryd
-        $("div.title_description").hover(
-          function() {
-            $(this).animate({opacity: '1.0'}, "slow");
-          },
-          function() {
-            $(this).animate({opacity: '0.8'}, "slow");
-          }
-        );
+        $(document).ready(function(){
+
+          $(".hero_image").click(function(){
+            $(this).toggle();
+            $(this.nextElementSibling).fadeToggle(750);
+          });
+
+          $(".content").click(function(){
+            $(this).toggle();
+            $(this.previousElementSibling).fadeToggle(750);
+          });
+
+          $('header').click(function(){
+            $('body').load(location.href);
+          });
+
+        });
     </script>
   </body>
 </html>

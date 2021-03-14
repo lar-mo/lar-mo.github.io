@@ -7,63 +7,44 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="https://lar-mo.com/images/lar-mo_favicon.png" />
     <link rel="stylesheet" href="styles.css">
     <style type="text/css"></style>
   </head>
   <body>
-    <header><h1>Larry Moiola ►</h1></header>
-    <div class="wrapper">
+    <header><h1><a href="index.html" id="header_link">Larry Moiola ►</a></h1></header>
+    <div class="wrapper-i">
+
       <a href="portfolio.html">
-        <div class="lab_solution">
-          <div class="title_description">
-            <h2>Portfolio</h2>
-            <article>My webdev projects.</article>
-          </div>
-          <div class="image_container">
-            <img src="https://www.lar-mo.com/images/portfolio_hero.png"/>
-            <div class="mobile_banner">
-              <h1>Portfolio</h1>
-            </div>
-          </div>
+        <div class="hero_image">
+          <img id="hero1" src="https://www.lar-mo.com/images/portfolio_hero.png"/>
+        </div>
+        <div class="content">
+            <div class="close_button">☒</div>
+            <p>
+              <span class="title">Patty M Designs: Florist website.</span>
+              <p>Javascript, JQuery, Axios, Flickr API, Responsive, Mobile-friendly, Formspree, Google Analytics</p>
+              <p><a href="https://www.pattymdesigns.com" class="siteLink" target="_blank">visit site</a></p>
+            </p>
         </div>
       </a>
+
       <a href="socialmedia.html">
-        <div class="lab_solution">
-          <div class="title_description">
-            <h2>Social Media</h2>
-            <article>My social media presence.</article>
-          </div>
-          <div class="image_container">
-            <img src="https://www.lar-mo.com/images/socialmedia_hero.png"/>
-            <div class="mobile_banner">
-              <h1>Social Media</h1>
-            </div>
-          </div>
+        <div class="hero_image">
+          <img id="hero2" src="https://www.lar-mo.com/images/socialmedia_hero.png"/>
+        </div>
+        <div class="content">
+            <div class="close_button">☒</div>
+            <p>
+              <span class="title">Patty M Designs: Florist website.</span>
+              <p>Javascript, JQuery, Axios, Flickr API, Responsive, Mobile-friendly, Formspree, Google Analytics</p>
+              <p><a href="https://www.pattymdesigns.com" class="siteLink" target="_blank">visit site</a></p>
+            </p>
         </div>
       </a>
+
     </div>
-    <script type="text/javascript">
-        // Credit:
-        // https://codepen.io/nickcil/pen/sfutl
-        // https://stackoverflow.com/questions/13725263/changing-background-opacity-of-div-using-rgba
-        $(window).scroll(function(){
-          $("header").css("background-color", 'rgba(128, 128, 128,' + (0.7 + $(window).scrollTop() / 300) + ')');
-        });
-    </script>
-    <script type="text/javascript">
-        // Credit:
-        // https://www.w3schools.com/jquery/jquery_animate.asp
-        // https://stackoverflow.com/questions/31353418/how-to-animate-background-color-in-jqueryd
-        $("div.title_description").hover(
-          function() {
-            $(this).animate({opacity: '1.0'}, "slow");
-          },
-          function() {
-            $(this).animate({opacity: '0.8'}, "slow");
-          }
-        );
-    </script>
   </body>
 </html>
