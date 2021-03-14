@@ -23,9 +23,6 @@ h2 {
   padding: 0 15px 15px;
   font-size: 1.4em;
 }
-article {
-  padding: 0 15px 15px;
-}
 #header_link {
   color: #F9F9F9;
   text-decoration: none;
@@ -82,7 +79,7 @@ header {
   opacity: 70%;
   cursor: pointer;
 }
-.content p {
+article, .content p {
   padding: 10px 20px;
 }
 .title {
