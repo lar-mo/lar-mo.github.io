@@ -116,7 +116,7 @@ article, .content p {
     align-items: center;
     justify-content: space-around;
     width: 100vw;
-    height: 80vh;
+    height: 100%;
   }
   .wrapper-i div {
     padding: 5px;
