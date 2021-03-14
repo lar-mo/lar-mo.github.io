@@ -45,6 +45,7 @@ header {
   align-items: flex-start;
   justify-content: space-around;
   flex-wrap: wrap;
+  padding-bottom: 30px;
 }
 .wrapper-i {
   display: flex;
@@ -106,5 +107,8 @@ article, .content p {
   .wrapper-i {
     margin-top: 50px;
     flex-direction: column;
+  }
+  .wrapper {
+    padding-bottom: 10px;
   }
 }
