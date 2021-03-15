@@ -7,6 +7,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/header-anim.js"></script>
+    <script src="js/flip-card.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="https://lar-mo.com/images/lar-mo_favicon.png" />
@@ -126,45 +128,6 @@
           </p>
       </div>
     </div> <!-- end of wrapper -->
-    <script type="text/javascript">
-        // Credit:
-        // https://codepen.io/nickcil/pen/sfutl
-        // https://stackoverflow.com/questions/13725263/changing-background-opacity-of-div-using-rgba
-        $(window).scroll(function(){
-          $("header").css("background-color", 'rgba(128, 128, 128,' + (0.7 + $(window).scrollTop() / 300) + ')');
-        });
-    </script>
-    <script type="text/javascript">
-        // Credit:
-        // https://www.w3schools.com/jquery/jquery_animate.asp
-        // https://stackoverflow.com/questions/31353418/how-to-animate-background-color-in-jqueryd
-        $("div.title_description").hover(
-          function() {
-            $(this).animate({opacity: '1.0'}, "slow");
-          },
-          function() {
-            $(this).animate({opacity: '0.8'}, "slow");
-          }
-        );
-    </script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-
-          $(".hero_image").click(function(){
-            $(this).toggle();
-            $(this.nextElementSibling).fadeToggle(750);
-          });
-
-          $(".content").click(function(){
-            $(this).toggle();
-            $(this.previousElementSibling).fadeToggle(750);
-          });
-
-          $('header').click(function(){
-            $('body').load(location.href);
-          });
-
-        });
-    </script>
+    <div class="empty_row">&nbsp;</div>
   </body>
 </html>
