@@ -167,7 +167,7 @@ header {
 
 .category_container {
   padding-top: 100px;
-  /* width: 427px; */
+  /* width: 400px; */
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -177,8 +177,8 @@ header {
 
 .category > img {
   border-radius: 20px;
-  width: 427px;
-  height: 270px;
+  width: 400px;
+  height: 231px;
 }
 
 .tiles {
@@ -194,15 +194,16 @@ header {
 
 .tiles > img {
   border-radius: 20px;
-  width: 427px;
-  height: 270px;
+  width: 400px;
+  height: 231px;
 }
 .content {
-  width: 427px;
-  height: 269px;
+  width: 400px;
+  height: 231px;
   background-color: #fff;
   border-radius: 20px;
   margin-top: 50px;
+  margin-bottom: 4px;
   display: none;
   opacity: 80%;
   cursor: pointer;
