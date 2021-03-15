@@ -19,12 +19,13 @@ h1 {
   color: #F9F9F9;
   margin: 0;
   padding: 15px;
+  font-size: 1.7em;
 }
 h2 {
   color: #F9F9F9;
   margin: 0;
   padding: 0 15px 15px;
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 .header_links {
   color: #F9F9F9;
@@ -139,6 +140,7 @@ header {
   text-align: left;
   margin-left: 70px;
   padding: 25px;
+  font-size: 0.9em;
 }
 
 .description-main {
@@ -200,7 +202,7 @@ header {
   height: 269px;
   background-color: #fff;
   border-radius: 20px;
-  margin: 50px auto;
+  margin-top: 50px;
   display: none;
   opacity: 80%;
   cursor: pointer;
