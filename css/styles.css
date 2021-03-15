@@ -180,9 +180,16 @@ header {
 }
 
 .tiles {
-  margin: 50px auto;
+  margin-top: 50px;
+  /* margin-bottom: 25px; */
   cursor: pointer;
 }
+
+.first_tile {
+  margin-top: 60px;
+  width: 100%;
+}
+
 .tiles > img {
   border-radius: 20px;
   width: 427px;
