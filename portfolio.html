@@ -7,6 +7,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/header-anim.js"></script>
+    <script src="js/flip-card.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="https://lar-mo.com/images/lar-mo_favicon.png" />
@@ -87,34 +89,7 @@
           <p><a href="https://lar-mo.github.io/AdventOfCode/" class="siteLink" target="_blank">visit site</a></p>
         </p>
       </div>
-
+      <div class="empty_row">&nbsp;</div>
     </div> <!-- end of wrapper -->
-    <script type="text/javascript">
-        // Credit:
-        // https://codepen.io/nickcil/pen/sfutl
-        // https://stackoverflow.com/questions/13725263/changing-background-opacity-of-div-using-rgba
-        $(window).scroll(function(){
-          $("header").css("background-color", 'rgba(128, 128, 128,' + (0.7 + $(window).scrollTop() / 300) + ')');
-        });
-    </script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-
-          $(".hero_image").click(function(){
-            $(this).toggle();
-            $(this.nextElementSibling).fadeToggle(750);
-          });
-
-          $(".content").click(function(){
-            $(this).toggle();
-            $(this.previousElementSibling).fadeToggle(750);
-          });
-
-          $('header').click(function(){
-            $('body').load(location.href);
-          });
-
-        });
-    </script>
   </body>
 </html>
