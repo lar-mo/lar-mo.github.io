@@ -228,6 +228,7 @@ header {
 article, .content p {
   padding: 5px 20px;
 }
+
 .title {
   font-weight: 700;
 }
@@ -297,10 +298,12 @@ article, .content p {
     top: 36px;
   }
 
-  .tiles > img {
+  .tiles > img, .content {
     border-radius: 20px;
-    width: 85vw;
-    height: auto;
+    /* width: 40vw;
+    height: auto; */
+    width: 307px;
+    height: 177px;
   }
 }
 
