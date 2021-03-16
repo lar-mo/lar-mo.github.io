@@ -9,6 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="js/header-anim.js"></script>
     <script src="js/flip-card.js"></script>
+    <script src="js/header-resizer.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="https://lar-mo.com/images/lar-mo_favicon.png" />
@@ -265,27 +266,11 @@
       <span class="section_text" id="footer_text">
         <div>
           Spring 2021. I'm open for work.
-          <h3><a href="mailto:lmoiola@gmail.com" id="footer_link">lmoiola@gmail.com</a>&nbsp;<span id="pipe">|</span> <nobr>(818) 527-2327</nobr></h3>
+          <h3><a href="#" onclick="formbutton('toggleForm');return false" class="link-underline" id="footer_link">Say Hello!</a>&nbsp;<span id="pipe">|</span>&nbsp;<a href="mailto:lmoiola@gmail.com" id="footer_link">lmoiola@gmail.com</a>&nbsp;<span id="pipe">|</span>&nbsp;<nobr>(818) 527-2327</nobr></h3>
         </div>
       </span>
     </div>
-
-    <script type="text/javascript">
-        // When the user scrolls down 50px from the top of the document, resize the header's font size
-      window.onscroll = function() {scrollFunction()};
-        function scrollFunction() {
-        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-          document.querySelector("header").style.padding = "8px";
-          $('header').css('box-shadow',        '3px 3px 5px 4px rgba(25,25,25,0.4)')
-          $('header').css('-moz-box-shadow',   '3px 3px 5px 4px rgba(25,25,25,0.4)')
-          $('header').css('-webkit-box-shadow','3px 3px 5px 4px rgba(25,25,25,0.4)')
-        } else {
-          document.querySelector("header").style.padding = "19px";
-          $('header').css('box-shadow','')
-          $('header').css('-moz-box-shadow','')
-          $('header').css('-webkit-box-shadow','')
-        }
-      }
-    </script>
+    <script src="https://formspree.io/js/formbutton-v1.0.4.min.js" defer></script>
+    <script src="js/formspree-formbutton.js" defer></script>
   </body>
 </html>
