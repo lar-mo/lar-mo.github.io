@@ -16,13 +16,14 @@
     <style type="text/css"></style>
   </head>
   <body>
-    <header><h1><a href="index.html" class="header_links">Larry Moiola ►</a>&nbsp;<a href="#portfolio" class="header_links">Portfolio</a>.&nbsp;&nbsp;<a href="#socialmedia" class="header_links">Social Media</a>.</h1></header>
+    <a name="top"></a>
+    <header><h1><a href="#top" class="header_links">Larry Moiola. ►</a>&nbsp;<a href="#portfolio" class="header_links">Portfolio</a>.&nbsp;&nbsp;<a href="#socialmedia" class="header_links">Social Media</a>.</h1></header>
     <div class="wrapper-i">
 
       <div class="hero">
         <div class="hero-text">
           <div class="hero-title center-text">Larry Moiola</div>
-          <div class="hero-subtitle center-text">QA professional and jr. software developer, photographer, digital artist, videographer, musician.</div>
+          <div class="hero-subtitle center-text">QA professional, jr. software developer, photographer, digital artist, videographer, musician.</div>
       <!-- </div>  -->
       <!-- end hero div -->
 
@@ -43,16 +44,12 @@
 
     </div> <!-- wrapper-i end -->
 
-    <div class="spacer"></div>
-
     <div class="wrapper" id="portfolio">
       <div class="description">
-        <span class="section_title">
-          <h1>Portfolio</h1>
-        </span>
+        <h1 class="section_title">Portfolio.</h1>
         <span class="section_text">
           <div>
-            These are the web dev projects I've done since completing the Full Stack Bootcamp at PDX Code Guild in Summer 2019.
+            These are my web-dev projects.
             <h3>Javascript. JQuery. Bootstrap. SwiperJS. NodeJS. VueJS. Python. Flask. Django. HTML/CSS. Responsive/Mobile. Cypress. Unit Tests. git/GitHub. DevOps. Docker. AWS. Postresql</h3>
           </div>
         </span>
@@ -130,14 +127,13 @@
           <p><a href="https://lar-mo.github.io/AdventOfCode/" class="siteLink" target="_blank">visit site</a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/lar-mo/AdventOfCode" class="siteLink" target="_blank">github repo</a></p>
         </p>
       </div>
+      <div class="spacer"></div>
     </div> <!-- end of wrapper -->
-
-    <div class="spacer"></div>
 
     <div class="wrapper" id="socialmedia">
       <div class="description">
         <span class="section_title">
-          <h1>Social Media</h1>
+          <h1>Social Media.</h1>
         </span>
         <span class="section_text">
           <div>
@@ -255,13 +251,50 @@
             <p><a href="https://www.pinterest.com/larry_moiola/" class="siteLink" target="_blank">visit site</a></p>
           </p>
       </div>
+      <div class="empty_row">&nbsp;</div>
     </div> <!-- end of wrapper -->
 
-    <div class="empty_row">&nbsp;</div>
-    <!-- <script type="text/javascript">
-      $('#po').click(function(){
-        $('.wrapper').css()
-      })
-    </script> -->
+    <footer>
+      <p><a href="mailto:lmoiola@gmail.com">lmoiola@gmail.com</a> | (818) 527-2327</p>
+    </footer>
+    <script type="text/javascript">
+        // When the user scrolls down 50px from the top of the document, resize the header's font size
+      window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+          document.querySelector("header").style.padding = "8px";
+          $('header').css('box-shadow',        '3px 3px 5px 4px rgba(25,25,25,0.4)')
+          $('header').css('-moz-box-shadow',   '3px 3px 5px 4px rgba(25,25,25,0.4)')
+          $('header').css('-webkit-box-shadow','3px 3px 5px 4px rgba(25,25,25,0.4)')
+        } else {
+          if (window.innerWidth > 800) {
+            document.querySelector("header").style.padding = "19px";
+            $('header').css('box-shadow','')
+            $('header').css('-moz-box-shadow','')
+            $('header').css('-webkit-box-shadow','')
+          } else if (window.innerWidth > 576 && window.innerWidth < 801) {
+            document.querySelector("header").style.padding = "10px";
+            $('header').css('box-shadow','')
+            $('header').css('-moz-box-shadow','')
+            $('header').css('-webkit-box-shadow','')
+          } else if (window.innerWidth > 501 && window.innerWidth < 575) {
+            document.querySelector("header").style.padding = "5px";
+            $('header').css('box-shadow','')
+            $('header').css('-moz-box-shadow','')
+            $('header').css('-webkit-box-shadow','')
+          } else if (window.innerWidth < 500) {
+            document.querySelector("header").style.padding = "0px";
+            $('header').css('box-shadow','')
+            $('header').css('-moz-box-shadow','')
+            $('header').css('-webkit-box-shadow','')
+          } else {
+            document.querySelector("header").style.padding = "0px";
+            $('header').css('box-shadow','')
+            $('header').css('-moz-box-shadow','')
+            $('header').css('-webkit-box-shadow','')
+          }
+        }
+      }
+    </script>
   </body>
 </html>
