@@ -31,12 +31,18 @@
         <a class="category_link" href="#portfolio">
           <div class="category">
             <img src="https://www.lar-mo.com/images/portfolio_hero.png"/>
+            <div class="banner">
+              Portfolio
+            </div>
           </div>
         </a>
 
         <a class="category_link" href="#socialmedia">
           <div class="category">
             <img src="https://www.lar-mo.com/images/socialmedia_hero.png"/>
+            <div class="banner">
+              Social Media
+            </div>
           </div>
         </a>
       </div>
@@ -86,7 +92,7 @@
       <div class="content">
         <div class="close_button">☒</div>
         <p>
-          <span class="title">Registration + RBAC: 2-step registration & 3-tier membership.</span>
+          <span class="title">Registration + RBAC: <nobr>2-step</nobr> registration & <nobr>3-tier</nobr> membership.</span>
           <p>Django, Python, Javascript, HTML, CSS</p>
           <p><a href="https://www.registration-rbac.com/" class="siteLink" target="_blank">visit site</a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/lar-mo/registration-rbac" class="siteLink" target="_blank">github repo</a></p>
         </p>
@@ -175,7 +181,7 @@
           <div class="close_button">☒</div>
           <p>
             <span class="title">Soundcloud</span>
-            <article>My music.</article>
+            <article>My music. Electroncia. Instrumentals.</article>
             <p><a href="https://soundcloud.com/larry-moiola" class="siteLink" target="_blank">visit site</a></p>
           </p>
       </div>
@@ -187,7 +193,7 @@
           <div class="close_button">☒</div>
           <p>
             <span class="title">GitHub</span>
-            <article>My software projects.</article>
+            <article>My software projects. See Portfolio.</article>
             <p><a href="https://github.com/lar-mo" class="siteLink" target="_blank">visit site</a></p>
           </p>
       </div>
@@ -199,7 +205,7 @@
           <div class="close_button">☒</div>
           <p>
             <span class="title">Blogspot</span>
-            <article>My road trips & hikes.</article>
+            <article>My road trips & hikes. WA. OR. CA. ID. MT. more.</article>
             <p><a href="https://roadtripsandhikes.blogspot.com/" class="siteLink" target="_blank">visit site</a></p>
           </p>
       </div>
@@ -211,7 +217,7 @@
           <div class="close_button">☒</div>
           <p>
             <span class="title">Roadtrippers</span>
-            <article>My road trips.</article>
+            <article>My road trips. WA. OR. CA. ID. MT.</article>
             <p><a href="https://maps.roadtrippers.com/people/lar-mo" class="siteLink" target="_blank">visit site</a></p>
           </p>
       </div>
@@ -223,7 +229,7 @@
           <div class="close_button">☒</div>
           <p>
             <span class="title">AllTrails</span>
-            <article>My hikes.</article>
+            <article>My hikes. WA. OR. CA. Norway.</article>
             <p><a href="https://www.alltrails.com/members/robert-moiola?ref=header" class="siteLink" target="_blank">visit site</a></p>
           </p>
       </div>
@@ -235,7 +241,7 @@
           <div class="close_button">☒</div>
           <p>
             <span class="title">Spotify</span>
-            <article>My playlists.</article>
+            <article>My playlists. Legen-day List.</article>
             <p><a href="https://open.spotify.com/user/larrythelejund" class="siteLink" target="_blank">visit site</a></p>
           </p>
       </div>
@@ -251,12 +257,19 @@
             <p><a href="https://www.pinterest.com/larry_moiola/" class="siteLink" target="_blank">visit site</a></p>
           </p>
       </div>
-      <div class="empty_row">&nbsp;</div>
+      <div class="spacer">&nbsp;</div>
     </div> <!-- end of wrapper -->
 
-    <footer>
-      <p><a href="mailto:lmoiola@gmail.com">lmoiola@gmail.com</a> | (818) 527-2327</p>
-    </footer>
+    <div class="description" id="footer_desc">
+      <h1 class="section_title" id="footer_title">Contact.</h1>
+      <span class="section_text" id="footer_text">
+        <div>
+          Spring 2021. I'm open for work.
+          <h3><a href="mailto:lmoiola@gmail.com" id="footer_link">lmoiola@gmail.com</a>&nbsp;<span id="pipe">|</span> <nobr>(818) 527-2327</nobr></h3>
+        </div>
+      </span>
+    </div>
+
     <script type="text/javascript">
         // When the user scrolls down 50px from the top of the document, resize the header's font size
       window.onscroll = function() {scrollFunction()};
@@ -267,32 +280,10 @@
           $('header').css('-moz-box-shadow',   '3px 3px 5px 4px rgba(25,25,25,0.4)')
           $('header').css('-webkit-box-shadow','3px 3px 5px 4px rgba(25,25,25,0.4)')
         } else {
-          if (window.innerWidth > 800) {
-            document.querySelector("header").style.padding = "19px";
-            $('header').css('box-shadow','')
-            $('header').css('-moz-box-shadow','')
-            $('header').css('-webkit-box-shadow','')
-          } else if (window.innerWidth > 576 && window.innerWidth < 801) {
-            document.querySelector("header").style.padding = "10px";
-            $('header').css('box-shadow','')
-            $('header').css('-moz-box-shadow','')
-            $('header').css('-webkit-box-shadow','')
-          } else if (window.innerWidth > 501 && window.innerWidth < 575) {
-            document.querySelector("header").style.padding = "5px";
-            $('header').css('box-shadow','')
-            $('header').css('-moz-box-shadow','')
-            $('header').css('-webkit-box-shadow','')
-          } else if (window.innerWidth < 500) {
-            document.querySelector("header").style.padding = "0px";
-            $('header').css('box-shadow','')
-            $('header').css('-moz-box-shadow','')
-            $('header').css('-webkit-box-shadow','')
-          } else {
-            document.querySelector("header").style.padding = "0px";
-            $('header').css('box-shadow','')
-            $('header').css('-moz-box-shadow','')
-            $('header').css('-webkit-box-shadow','')
-          }
+          document.querySelector("header").style.padding = "19px";
+          $('header').css('box-shadow','')
+          $('header').css('-moz-box-shadow','')
+          $('header').css('-webkit-box-shadow','')
         }
       }
     </script>
