@@ -66,8 +66,6 @@ header {
 
 .hero-subtitle {
   font-size: 36px;
-  padding-left: 220px;
-  padding-right: 220px;
 }
 
 .category_container {
@@ -251,18 +249,13 @@ article, .content p {
     background-position: top, center;
     box-sizing: border-box;
   }
-  .hero-text {
-    padding-top: calc(100vh * 3/16);
-    margin-bottom: calc(100vh * 13/16);
+
+  .wrapper {
+    background-image: url(https://www.lar-mo.com/images/index_bg_img_sm.jpg);
   }
 }
 
 @media all and (max-width: 1200px) {
-
-  .hero-subtitle {
-    padding-left: 100px;
-    padding-right: 100px;
-  }
 
 }
 
@@ -270,12 +263,6 @@ article, .content p {
   html, body {
     font-size: 90%;
   }
-
-  .hero-text {
-    padding-top: calc(100vh * 3/16);
-    margin-bottom: calc(100vh * 13/16);
-  }
-
   .description {
     top: 33px;
   }
@@ -284,11 +271,6 @@ article, .content p {
 @media all and (max-width: 768px) {
   html, body {
     font-size: 80%;
-  }
-
-  .hero-text {
-    padding-top: calc(100vh * 3/16);
-    margin-bottom: calc(100vh * 13/16);
   }
 
   .category_container {
