@@ -5,7 +5,7 @@ formbutton("create", {
   description: "",
   styles: {
     button: {
-      background: "#515151"
+      background: "#515151",
     },
     title: {
       background: "#515151",
@@ -42,4 +42,5 @@ formbutton("create", {
     value: "Submit Form",
   }],
   action: "https://formspree.io/xgepgqvg",
+  buttonImg: "<i class='fas fa-comment' style='font-size:24px'/>",
 })
