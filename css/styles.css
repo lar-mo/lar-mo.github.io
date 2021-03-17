@@ -330,6 +330,13 @@ article, .content p {
 @media all and (max-width: 576px) {
 
 }
+/*iphone 7+ 414x605*/
+@media all and (max-width: 414px) {
+  .hero-text {
+    padding-top: calc(100vh * 5/32);
+    margin-bottom: calc(100vh * 27/32);
+  }
+}
 
 @media all and (max-width: 375px) {
   #pipe {
