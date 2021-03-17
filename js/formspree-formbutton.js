@@ -1,6 +1,6 @@
 window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
 formbutton("create", {
-  theme: "classic",
+  // theme: "classic",
   title: "Contact me",
   description: "",
   styles: {
@@ -21,25 +21,22 @@ formbutton("create", {
     value: "message from lar-mo.io contact form",
   },
   {
-    name: "name",
-    type: "text",
-    label: "Name",
-    required: true,
-  },
-  {
-    name: "email",
     type: "email",
-    label: "Email",
+    label: "Email:",
+    name: "email",
     required: true,
+    placeholder: "your@email.com"
   },
   {
-    name: "Message",
     type: "textarea",
+    label: "Message:",
+    name: "message",
+    placeholder: "What's on your mind?",
   },
   {
     name: "Submit",
     type: "submit",
-    value: "Submit Form",
+    value: "Send Message",
   }],
   action: "https://formspree.io/xgepgqvg",
   buttonImg: "<i class='fas fa-comment' style='font-size:24px'/>",
