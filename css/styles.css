@@ -158,12 +158,9 @@ header {
   color: #333;
   text-align: center;
 }
+
 .section_title > h1 {
   color: #333;
-}
-
-#footer_title, #footer_text, #footer_link {
-  color: #fff;
 }
 
 .section_title {
@@ -171,6 +168,7 @@ header {
   color: #333;
   text-align: center;
 }
+
 .section_title > h1 {
   color: #333;
 }
@@ -225,6 +223,7 @@ header {
   opacity: 80%;
   cursor: pointer;
 }
+
 article, .content p {
   padding: 5px 20px;
 }
@@ -232,10 +231,21 @@ article, .content p {
 .title {
   font-weight: 700;
 }
+
 .siteLink {
   color: #111;
   text-decoration: underline;
 }
+
+.say-hello {
+  font-weight: bold;
+}
+
+#footer_title, #footer_text, #footer_link {
+  color: #fff;
+  text-decoration: none;
+}
+
 .close_button {
   text-align: right;
   padding: 15px 15px 0 0;
