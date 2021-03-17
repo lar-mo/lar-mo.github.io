@@ -274,8 +274,14 @@ article, .content p {
   html, body {
     font-size: 90%;
   }
+
   .description {
     top: 33px;
+  }
+
+  .spacer {
+    min-height: 100px;
+    height: 100px;
   }
 }
 
@@ -314,6 +320,10 @@ article, .content p {
     height: auto; */
     width: 307px;
     height: 177px;
+  }
+  .spacer {
+    min-height: 50px;
+    height: 50px;
   }
 }
 
