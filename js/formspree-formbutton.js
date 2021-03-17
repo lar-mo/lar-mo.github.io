@@ -46,7 +46,7 @@ if($(window).width() <= 510){
 
     $('#formbutton-button').hide();
     $(window).on('scroll', function(){
-      if($(window).scrollTop() + $(window).height() + 50 >= $(document).height()){
+      if($(window).scrollTop() + $(window).height() + 100 >= $(document).height()){
         $('#formbutton-button').fadeOut(500);
       }
       else{
