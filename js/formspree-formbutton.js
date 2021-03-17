@@ -41,3 +41,16 @@ formbutton("create", {
   action: "https://formspree.io/xgepgqvg",
   buttonImg: "<i class='fas fa-comment' style='font-size:24px'/>",
 })
+
+if($(window).width() <= 510){
+
+    $('#formbutton-button').hide();
+    $(window).on('scroll', function(){
+      if($(window).scrollTop() + $(window).height() + 50 >= $(document).height()){
+        $('#formbutton-button').fadeOut(500);
+      }
+      else{
+        $('#formbutton-button').fadeIn(500);
+      }
+    });
+}
