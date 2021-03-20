@@ -34,7 +34,7 @@ header {
   width: 100%;
   padding: 19px;
   transition: 0.25s;
-  z-index: 999;
+  z-index: 2;
 }
 .header_links {
   text-decoration: none;
@@ -80,6 +80,9 @@ a:hover, a:active {
   border-radius: 20px;
   width: 400px;
   height: 231px;
+  box-shadow:           3px 3px 5px 4px rgba(25,25,25,0.6);
+  -moz-box-shadow:      3px 3px 5px 4px rgba(25,25,25,0.6);
+  -webkit-box-shadow:   3px 3px 5px 4px rgba(25,25,25,0.6);
 }
 .banner {
   position: absolute;
@@ -112,7 +115,7 @@ a:hover, a:active {
 }
 .description {
   width: 100%;
-  z-index: 998;
+  z-index: 1;
   height: 120px;
   display: flex;
   flex-direction: row;
@@ -170,6 +173,9 @@ a:hover, a:active {
   border-radius: 20px;
   width: 400px;
   height: 231px;
+  box-shadow:           3px 3px 5px 4px rgba(25,25,25,0.6);
+  -moz-box-shadow:      3px 3px 5px 4px rgba(25,25,25,0.6);
+  -webkit-box-shadow:   3px 3px 5px 4px rgba(25,25,25,0.6);
 }
 .content {
   width: 400px;
@@ -181,6 +187,10 @@ a:hover, a:active {
   display: none;
   opacity: 80%;
   cursor: pointer;
+  z-index: 0;
+  box-shadow:           3px 3px 5px 4px rgba(25,25,25,0.6);
+  -moz-box-shadow:      3px 3px 5px 4px rgba(25,25,25,0.6);
+  -webkit-box-shadow:   3px 3px 5px 4px rgba(25,25,25,0.6);
 }
 article, .content p {
   padding: 5px 20px;

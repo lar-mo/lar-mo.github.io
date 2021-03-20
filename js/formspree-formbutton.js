@@ -39,7 +39,7 @@ formbutton("create", {
     value: "Send Message",
   }],
   action: "https://formspree.io/xgepgqvg",
-  buttonImg: "<i class='fas fa-comment' style='font-size:24px'/>",
+  buttonImg: "<i class='fas fa-comments' style='font-size:24px'/>",
 })
 
 if($(window).width() <= 510){
