@@ -123,7 +123,6 @@ a:hover, a:active {
   justify-content: space-between;
   top: 48px;
   background-color: #fff;
-  padding: 10px;
   position: sticky;
   position: -webkit-sticky;
   position: -moz-sticky;
@@ -148,11 +147,6 @@ a:hover, a:active {
 }
 .section_title > h1 {
   color: #333;
-}
-.section_title {
-  width: 33.33%;
-  color: #333;
-  text-align: center;
 }
 .section_text {
   width: 66.67%;
@@ -296,6 +290,9 @@ h3 a {
   .hero_text {
     padding-top: calc(100vh * 5/32);
     margin-bottom: calc(100vh * 27/32);
+  }
+  .section_title > h1 {
+    padding-left: 10px;
   }
 }
 
