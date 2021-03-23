@@ -90,7 +90,7 @@ a:hover, a:active {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(255,255,255,0.8);
-  width: 356px;
+  width: 360px;
   padding: 20px;
   text-shadow: 0 0;
   color: #515151;
@@ -266,7 +266,7 @@ h3 a {
     height: auto;
   }
   .banner {
-    width: 128px;
+    width: 146px;
   }
   .description {
     top: 36px;
