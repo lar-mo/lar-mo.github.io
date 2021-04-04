@@ -150,7 +150,7 @@ a:hover, a:active {
 }
 .section_text {
   width: 66.67%;
-  margin-left: 75px;
+  margin: 15px 75px 0;
 }
 .category_link {
   text-decoration: none;
