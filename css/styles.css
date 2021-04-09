@@ -34,7 +34,7 @@ header {
   width: 100%;
   padding: 19px;
   transition: 0.25s;
-  z-index: 2;
+  z-index: 3;
 }
 .header_links {
   text-decoration: none;
@@ -48,6 +48,7 @@ a:hover, a:active {
 .hero {
   height: 100vh; /* Fallback for browsers that do not support Custom Properties */
   height: calc(var(--vh, 1vh) * 100);
+  z-index: 1;
 }
 .hero_text {
   color: #fff;
@@ -115,7 +116,7 @@ a:hover, a:active {
 }
 .description {
   width: 100%;
-  z-index: 1;
+  z-index: 2;
   height: 120px;
   display: flex;
   flex-direction: row;
@@ -158,6 +159,7 @@ a:hover, a:active {
 .tiles {
   margin-top: 50px;
   cursor: pointer;
+  z-index: 1;
 }
 .first_tile {
   margin-top: 45px;
@@ -181,7 +183,7 @@ a:hover, a:active {
   display: none;
   opacity: 80%;
   cursor: pointer;
-  z-index: 0;
+  z-index: 1;
   box-shadow:           3px 3px 5px 4px rgba(25,25,25,0.6);
   -moz-box-shadow:      3px 3px 5px 4px rgba(25,25,25,0.6);
   -webkit-box-shadow:   3px 3px 5px 4px rgba(25,25,25,0.6);
@@ -217,6 +219,29 @@ h3 a {
   text-align: right;
   padding: 15px 15px 0 0;
   font-size: 21px;
+}
+
+.foldtr, .foldtr2 {
+  position: relative;
+}
+
+.foldtr:before {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  right: 0%;
+  width: 0px;
+  height: 0px;
+  border-bottom: 27px solid #eee;
+  border-left: 27px solid rgba(255,255,255,0.4);
+  border-right: 27px solid #eee;
+  border-top: 27px solid rgba(255,255,255,0.4);
+  -webkit-box-shadow: -7px 7px 7px rgba(0,0,0,0.3);
+  -moz-box-shadow: -7px 7px 7px rgba(0,0,0,0.3);
+  box-shadow: -7px 7px 7px rgba(0,0,0,0.3);
+  border-radius: 20px 0 20px 0;
+  -webkit-background-clip: padding-box; /* for Safari */
+  background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
 }
 
 @media all and (max-width: 1400px) {
