@@ -31,7 +31,7 @@ formbutton("create", {
     type: "textarea",
     label: "Message:",
     name: "message",
-    placeholder: "What's on your mind?",
+    placeholder: "Hi, how are you?",
   },
   {
     name: "Submit",
