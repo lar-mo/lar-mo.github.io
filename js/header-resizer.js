@@ -7,7 +7,7 @@ window.onscroll = function() {scrollFunction()};
     $('header').css('-moz-box-shadow',   '3px 3px 5px 4px rgba(25,25,25,0.4)')
     $('header').css('-webkit-box-shadow','3px 3px 5px 4px rgba(25,25,25,0.4)')
   } else {
-    document.querySelector("header").style.padding = "19px";
+    document.querySelector("header").style.padding = "22px";
     $('header').css('box-shadow','')
     $('header').css('-moz-box-shadow','')
     $('header').css('-webkit-box-shadow','')
