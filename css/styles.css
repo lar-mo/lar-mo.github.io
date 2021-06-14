@@ -51,6 +51,7 @@ a:hover, a:active {
 #logo {
   width: 50px;
   padding-right: 15px;
+  transition: 0.35s;
 }
 .hero {
   height: 100vh; /* Fallback for browsers that do not support Custom Properties */
