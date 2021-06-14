@@ -32,7 +32,7 @@ header {
   top: 0;
   position: fixed;
   width: 100%;
-  padding: 22px;
+  padding: 19px;
   transition: 0.25s;
   z-index: 3;
   display: flex;
