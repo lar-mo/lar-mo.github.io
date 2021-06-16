@@ -252,7 +252,7 @@ h3 a {
   background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
 }
 
-@media all and (max-width: 2400px) {
+@media all and (max-width: 2400px) and (min-width: 1921px) {
   .tiles > img, .content {
     border-radius: 30px;
     width: 666px;
@@ -260,7 +260,7 @@ h3 a {
   }
 }
 
-@media all and (max-width: 1920px) {
+@media all and (max-width: 1920px) and (min-width: 1441px) {
   .tiles > img, .content {
     border-radius: 24px;
     width: 500px;
@@ -268,7 +268,7 @@ h3 a {
   }
 }
 
-@media all and (max-width: 1400px) {
+@media all and (max-width: 1440px) {
   html, body {
     background-attachment: inherit;
     background-repeat: repeat;
