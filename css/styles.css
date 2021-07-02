@@ -281,16 +281,6 @@ h3 a {
 }
 
 @media all and (max-width: 1440px) {
-  html, body {
-    background-attachment: inherit;
-    background-repeat: repeat;
-    background-size: cover;
-    background-position: top, center;
-    box-sizing: border-box;
-  }
-  .wrapper {
-    background-image: url(https://www.lar-mo.com/images/lar-mo-git-io-bg-1440-900.jpg);
-  }
   .hero_text {
     color: #fff;
     text-shadow: 4px 4px 8px #222;
@@ -308,11 +298,23 @@ h3 a {
 
 @media all and (max-width: 1200px) {
   /* Standard Bootstrap breakpoint */
+  #hero_title_card {
+    display: none;
+    visibility: hidden;
+  }
 }
 
 @media all and (max-width: 992px) {
   html, body {
+    background-attachment: inherit;
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: top, center;
+    box-sizing: border-box;
     font-size: 90%;
+  }
+  .wrapper {
+    background-image: url(https://www.lar-mo.com/images/lar-mo-git-io-bg-1440-900.jpg);
   }
   .description {
     top: 33px;
