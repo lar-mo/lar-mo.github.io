@@ -63,14 +63,14 @@ a:hover, a:active {
   text-shadow: 4px 4px 8px #222;
   padding-top: calc(100vh * 3/8);
   margin-bottom: calc(100vh * 5/8);
-  width: 90vw;
+  width: 83vw;
   font-weight: bold;
 }
 .hero_title {
   font-size: 60px;
 }
 .hero_subtitle {
-  font-size: 6em;
+  font-size: 5.5em;
 }
 #hero_title_card {
   color: #fff;
@@ -361,12 +361,15 @@ h3 a {
 
 @media all and (max-width: 576px) {
   /* Standard Bootstrap breakpoint */
+  .hero_subtitle {
+    font-size: 4.2em;
+  }
 }
 /*iphone 7+ 414x605*/
 @media all and (max-width: 414px) {
   .hero_text {
-    padding-top: calc(100vh * 5/32);
-    margin-bottom: calc(100vh * 27/32);
+    padding-top: calc(100vh * 10/32);
+    margin-bottom: calc(100vh * 22/32);
   }
   .section_title > h1 {
     padding-left: 10px;
