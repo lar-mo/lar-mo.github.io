@@ -54,8 +54,8 @@ a:hover, a:active {
   transition: 0.35s;
 }
 .hero {
-  height: 125vh; /* Fallback for browsers that do not support Custom Properties */
-  height: calc(var(--vh, 1vh) * 125);
+  height: 140vh; /* Fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 140);
   z-index: 1;
 }
 .hero_text {
