@@ -2,5 +2,8 @@
 // https://codepen.io/nickcil/pen/sfutl
 // https://stackoverflow.com/questions/13725263/changing-background-opacity-of-div-using-rgba
 $(window).scroll(function(){
-  $("header").css("background-color", 'rgba(128, 128, 128,' + (0.7 + $(window).scrollTop() / 300) + ')');
+    $("header").css("background-color", 'rgba(0, 0, 0,' + (0.0 + $(window).scrollTop() / 300) + ')');
+    $(".hero_text").css("opacity", 1.0 - $(window).scrollTop()/350);
+    $("#hero_title_card").css("opacity", 1.0 - $(window).scrollTop()/450);
+    // console.log(1.0 - $(window).scrollTop()/325);
 });
