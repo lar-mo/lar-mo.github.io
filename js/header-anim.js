@@ -5,5 +5,5 @@ $(window).scroll(function(){
     $("header").css("background-color", 'rgba(0, 0, 0,' + (0.0 + $(window).scrollTop() / 300) + ')');
     $(".hero_text").css("opacity", 1.0 - $(window).scrollTop()/350);
     $("#hero_title_card").css("opacity", 1.85 - $(window).scrollTop()/375);
-    console.log(1.0 - $(window).scrollTop()/600);
+    // console.log(1.0 - $(window).scrollTop()/600);
 });
