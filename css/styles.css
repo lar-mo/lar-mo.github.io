@@ -284,30 +284,21 @@ h3 a {
   .hero_text {
     color: #fff;
     text-shadow: 4px 4px 8px #222;
-    padding-top: calc(100vh * 2/8);
-    margin-bottom: calc(100vh * 6/8);
+    padding-top: calc(100vh * 5/16);
+    margin-bottom: calc(100vh * 11/16);
     width: 90vw;
     font-weight: bold;
-  }
-  .hero {
-    height: 100vh; /* Fallback for browsers that do not support Custom Properties */
-    height: calc(var(--vh, 1vh) * 100);
-    z-index: 1;
   }
 }
 
 @media all and (max-width: 1200px) {
   /* Standard Bootstrap breakpoint */
-  #hero_title_card {
-    display: none;
-    visibility: hidden;
-  }
 }
 
 @media all and (max-width: 992px) {
-  html, body {
-    background-attachment: inherit;
-    background-repeat: repeat;
+  /* html, body {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: top, center;
     box-sizing: border-box;
@@ -315,13 +306,22 @@ h3 a {
   }
   .wrapper {
     background-image: url(https://www.lar-mo.com/images/lar-mo-git-io-bg-1440-900.jpg);
-  }
+  } */
   .description {
     top: 33px;
   }
   .spacer {
     min-height: 100px;
     height: 100px;
+  }
+  #hero_title_card {
+    display: none;
+    visibility: hidden;
+  }
+  .hero {
+    height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
+    z-index: 1;
   }
 }
 
