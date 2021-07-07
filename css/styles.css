@@ -228,7 +228,11 @@ a.site_link:hover, a.site_link:active {
 #footer_title, #footer_text {
   color: #fff;
 }
-.footer_link:hover, .footer_link:active {
+a.footer_link:link, a.footer_link:visited {
+  color: #fff;
+  text-decoration: none;
+}
+a.footer_link:hover, a.footer_link:active {
   color: #ff6633;
   text-decoration: none;
 }
@@ -240,11 +244,9 @@ h3 a {
   padding: 15px 15px 0 0;
   font-size: 21px;
 }
-
 .foldtr, .foldtr2 {
   position: relative;
 }
-
 .foldtr:before {
   content: '';
   position: absolute;
