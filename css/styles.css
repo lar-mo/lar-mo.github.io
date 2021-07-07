@@ -42,10 +42,10 @@ header {
 .header_links {
   text-decoration: none;
 }
-a:link, a:visited {
+a.header_links:link, a.header_links:visited {
   color: #fff;
 }
-a:hover, a:active {
+a.header_links:hover, a.header_links:active {
   color: #222;
 }
 #logo {

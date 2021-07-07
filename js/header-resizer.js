@@ -7,7 +7,7 @@ window.onscroll = function() {scrollFunction()};
     $('header').css('box-shadow',        '3px 3px 5px 4px rgba(25,25,25,0.4)');
     $('header').css('-moz-box-shadow',   '3px 3px 5px 4px rgba(25,25,25,0.4)');
     $('header').css('-webkit-box-shadow','3px 3px 5px 4px rgba(25,25,25,0.4)');
-    $('a').on('mouseover', function() {
+    $('a.header_links').on('mouseover', function() {
       $(this).css('color', '#ff6633');
     }).on("mouseout", function() {
       $(this).css("color", "#fff");
@@ -23,7 +23,7 @@ window.onscroll = function() {scrollFunction()};
     $('header').css('box-shadow','');
     $('header').css('-moz-box-shadow','');
     $('header').css('-webkit-box-shadow','');
-    $('a').on('mouseover', function() {
+    $('a.header_links').on('mouseover', function() {
       $(this).css('color', '#222');
     }).on("mouseout", function() {
       $(this).css("color", "#fff");
