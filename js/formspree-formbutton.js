@@ -5,7 +5,7 @@ formbutton("create", {
   description: "",
   styles: {
     button: {
-      background: "#515151",
+      background: "rgba(84,132,201,0.9)",
     },
     title: {
       background: "#515151",
