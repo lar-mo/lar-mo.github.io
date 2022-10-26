@@ -10,7 +10,7 @@ window.onscroll = function() {scrollFunction()};
     $('a.header_links').on('mouseover', function() {
       $(this).css('color', '#ff6633');
     }).on("mouseout", function() {
-      $(this).css("color", "#fff");
+      $(this).css("color", "#ffffff");
     });
   } else {
     let win_width = $(window).width();
@@ -24,9 +24,9 @@ window.onscroll = function() {scrollFunction()};
     $('header').css('-moz-box-shadow','');
     $('header').css('-webkit-box-shadow','');
     $('a.header_links').on('mouseover', function() {
-      $(this).css('color', '#222');
+      $(this).css('color', '#222222');
     }).on("mouseout", function() {
-      $(this).css("color", "#fff");
+      $(this).css("color", "#ffffff");
     });
   }
 }
