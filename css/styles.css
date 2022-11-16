@@ -440,6 +440,9 @@ h3 a {
   header {
     padding: 14px;
   }
+  .backgroundFixed {
+    background-image: url(https://www.lar-mo.com/images/lar-mo-git-io-bg-1200x2000.jpg);
+  }
 }
 
 @media all and (max-width: 375px) {
