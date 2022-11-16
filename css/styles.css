@@ -362,9 +362,9 @@ h3 a {
     box-sizing: border-box;
     font-size: 90%;
   }
-  .wrapper {
+  /* .wrapper {
     background-image: url(https://www.lar-mo.com/images/lar-mo-git-io-bg-1440-900.jpg);
-  }
+  } */
 }
 
 @media all and (max-width: 992px) {
