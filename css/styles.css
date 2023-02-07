@@ -183,6 +183,7 @@ a.header_links:hover, a.header_links:active {
 .section_text {
   width: 66.67%;
   margin: 15px 75px 0;
+  color: #333;
 }
 .category_link {
   text-decoration: none;
