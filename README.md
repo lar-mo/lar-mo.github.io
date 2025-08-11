@@ -8,3 +8,4 @@ Includes projects in Django/Python, Javascript, JQuery, VueJS, responsive design
 ### Social Media
 
 Includes blog on blogspot, photography on Instagram, videos on YouTube, music on Soundcloud, Roadtrippers, AllTrails, favorite music on Spotify, other stuff on Pinterest)
+
