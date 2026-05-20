@@ -18,7 +18,7 @@ formbutton("create", {
     name: "_subject",
     type: "hidden",
     label: "",
-    value: "message from lar-mo.io contact form",
+    value: "message from lar-mo.com contact form",
   },
   {
     type: "email",
